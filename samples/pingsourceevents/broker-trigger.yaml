@@ -1,0 +1,26 @@
+apiVersion: eventing.knative.dev/v1
+kind: Broker
+metadata:
+  annotations:
+    eventing.knative.dev/broker.class: MTChannelBasedBroker
+  name: ktc-example-broker
+spec:
+  config:
+    apiVersion: v1
+    kind: ConfigMap
+    name: ktc-example-cm
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: ktc-example-trigger
+spec:
+  broker: ktc-example-broker
+  filter:
+    attributes:
+      type: dev.knative.sources.ping
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: cev

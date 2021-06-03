@@ -1,0 +1,28 @@
+apiVersion: v1
+data:
+  channelTemplateSpec: |
+    apiVersion: messaging.optum.dev/v1alpha1
+    kind: KafkaTopicChannel
+    spec:
+      numPartitions: 3
+      bootstrapServers:
+      - kafkabroker:443
+      net:
+        tls:
+          caCert:
+            secretKeyRef:
+              key: ca.crt
+              name: ca-secret
+          cert:
+            secretKeyRef:
+              key: tls.crt
+              name: tls-secret
+          enable: true
+          key:
+            secretKeyRef:
+              key: tls.key
+              name: tls-secret
+      topic: test-topic
+kind: ConfigMap
+metadata:
+  name: ktc-example-cm

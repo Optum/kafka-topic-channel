@@ -1,0 +1,13 @@
+# IDEs and editors
+*.iml
+.idea/
+.run/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Telepresence Logs
+telepresence.log
+
+brokerwtrigger.yaml

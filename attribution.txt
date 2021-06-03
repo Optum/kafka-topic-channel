@@ -1,0 +1,1200 @@
+Package: github.com/prometheus/procfs
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/google/uuid
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/klauspost/compress
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/matttproud/golang_protobuf_extensions/pbutil
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/beorn7/perks/quantile
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: cloud.google.com/go
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/jcmturner/gokrb5/v8
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: go.uber.org/multierr
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: golang.org/x/sys
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/cloudevents/sdk-go/v2
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: k8s.io/kube-openapi/pkg/util/proto
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/spf13/pflag
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: google.golang.org/protobuf
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/eapache/queue
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: g/v2
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: go.uber.org/automaxprocs
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/sirupsen/logrus
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: google.golang.org/api
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: go.uber.org/atomic
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/rickb777/plural
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/modern-go/reflect2
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/prometheus/statsd_exporter/pkg/mapper
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/prometheus/common
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/prometheus/client_golang/prometheus
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: contrib.go.opencensus.io/exporter/prometheus
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: k8s.io/klog
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/imdario/mergo
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/googleapis/gnostic
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/Shopify/sarama
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/google/go-cmp/cmp
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/aws/aws-sdk-go/internal/sync/singleflight
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/xdg/stringprep
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/klauspost/compress/snappy
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/jcmturner/dnsutils/v2
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: knative.dev/eventing/pkg
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: golang.org/x/net
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: google.golang.org/genproto
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/ghodss/yaml
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/pierrec/lz4
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/klauspost/compress/zstd/internal/xxhash
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/golang/snappy
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: golang.org/x/term
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/pkg/errors
+
+License: BSD 2-Clause "Simplified" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-2-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/google/gofuzz
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: contrib.go.opencensus.io/exporter/stackdriver
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/census-instrumentation/opencensus-proto/gen-go
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/xdg/scram
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/jcmturner/aescts/v2
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/blendle/zapdriver
+
+License: ISC License
+
+Copyrights: 
+
+
+License Text: 
+https://www.isc.org/downloads/software-support-policy/isc-license/
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: gopkg.in/inf.v0
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: k8s.io/apimachinery
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/googleapis/gax-go/v2
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: go.opencensus.io
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/hashicorp/golang-lru
+
+License: Mozilla Public License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.mozilla.org/MPL/2.0/
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: golang.org/x/time/rate
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: golang.org/x/crypto
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: k8s.io/api
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/alecthomas/units
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/alecthomas/template
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/jcmturner/gofork
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: gopkg.in/evanphx/json-patch.v4
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: knative.dev/eventing-kafka/pkg
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/go-logr/logr
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: golang.org/x/oauth2
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/davecgh/go-spew/spew
+
+License: ISC License
+
+Copyrights: 
+
+
+License Text: 
+https://www.isc.org/downloads/software-support-policy/isc-license/
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: gomodules.xyz/jsonpatch/v2
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: knative.dev/pkg
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/modern-go/concurrent
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: sigs.k8s.io/structured-merge-diff/v4/value
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: gopkg.in/alecthomas/kingpin.v2
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: google.golang.org/grpc
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/gogo/protobuf
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/jmespath/go-jmespath
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/aws/aws-sdk-go
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/grpc-ecosystem/grpc-gateway
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: gopkg.in/yaml.v2
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: k8s.io/apiextensions-apiserver/pkg/apis/apiextensions
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/robfig/cron/v3
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/prometheus/client_model/go
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/golang/groupcache/lru
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/hashicorp/go-uuid
+
+License: Mozilla Public License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.mozilla.org/MPL/2.0/
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/eapache/go-resiliency/breaker
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: go.uber.org/zap
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: k8s.io/utils
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: k8s.io/client-go
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/kelseyhightower/envconfig
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/blang/semver/v4
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/cespare/xxhash/v2
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: contrib.go.opencensus.io/exporter/ocagent
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/golang/protobuf
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/rcrowley/go-metrics
+
+License: BSD 2-Clause FreeBSD License
+
+Copyrights: 
+
+
+License Text: 
+http://www.freebsd.org/copyright/freebsd-license.html
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/jcmturner/rpc/v2
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/eapache/go-xerial-snappy
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: knative.dev/networking/pkg/prober
+
+License: Apache License 2.0
+
+Copyrights: 
+
+
+License Text: 
+http://www.apache.org/licenses/LICENSE-2.0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: golang.org/x/sync
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/rickb777/date/period
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: sigs.k8s.io/yaml
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: golang.org/x/text
+
+License: BSD 3-Clause "New" or "Revised" License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/BSD-3-Clause
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Package: github.com/json-iterator/go
+
+License: MIT License
+
+Copyrights: 
+
+
+License Text: 
+https://opensource.org/licenses/MIT
+
+-------------------------------------------------------------------------------------------------------------------------------
+

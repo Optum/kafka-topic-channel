@@ -1,0 +1,17 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: kt-addressable-resolver
+  labels:
+    duck.knative.dev/addressable: "true"
+# Do not use this role directly. These rules will be added to the "addressable-resolver" role.
+rules:
+  - apiGroups:
+      - messaging.optum.dev
+    resources:
+      - kafkatopicchannels
+      - kafkatopicchannels/status
+    verbs:
+      - get
+      - list
+      - watch

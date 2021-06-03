@@ -1,0 +1,10 @@
+kafka topic channel
+
+Copyright 2021 Optum
+
+Project Description:
+====================
+Kafka Topic Channel is a knative channel class based on kafka topic.
+
+Contributors:
+@itsmurugappan - application architect and primary developer

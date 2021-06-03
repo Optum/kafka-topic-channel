@@ -1,0 +1,136 @@
+name: E2E tests
+
+on:
+  pull_request:
+    branches: [ 'main']
+
+  push:
+    branches: [ 'main' ]
+
+jobs:
+
+  e2e:
+    name: e2e tests
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false # Keep running if one leg fails.
+      matrix:
+        k8s-version:
+        - v1.19.1
+
+        test-suite:
+        - ./test/e2e
+
+        kn-version:
+        - v0.23.0
+        - latest
+
+        # Map between K8s and KinD versions.
+        # This is attempting to make it a bit clearer what's being tested.
+        # See: https://github.com/kubernetes-sigs/kind/releases/tag/v0.9.0
+        include:
+        - k8s-version: v1.19.1
+          kind-version: v0.9.0
+          kind-image-sha: sha256:98cf5288864662e37115e362b23e4369c8c4a408f99cbc06e58ac30ddc721600
+
+        - kn-version: v0.23.0
+          kn-url: github.com/knative/eventing/releases/download/v0.23.0
+
+        - kn-version: latest
+          kn-url: storage.googleapis.com/knative-nightly/eventing/latest
+
+    env:
+      GOPATH: ${{ github.workspace }}
+      GO111MODULE: off
+      KO_DOCKER_REPO: kind.local
+
+    steps:
+    - name: Set up Go 1.15.x
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.15.x
+
+    - name: Install Dependencies
+      working-directory: ./
+      run: |
+        echo '::group:: install ko'
+        curl -L https://github.com/google/ko/releases/download/v0.8.3/ko_0.8.3_Linux_x86_64.tar.gz | tar xzf - ko
+        chmod +x ./ko
+        sudo mv ko /usr/local/bin
+        echo '::endgroup::'
+    - name: Check out code onto GOPATH
+      uses: actions/checkout@v2
+      with:
+        path: ./src/github.com/optum/kafka-topic-channel
+    - name: Install KinD
+      working-directory: ./src/github.com/optum/kafka-topic-channel
+      run: |
+        set -x
+        # Disable swap otherwise memory enforcement doesn't work
+        # See: https://kubernetes.slack.com/archives/CEKK1KTN2/p1600009955324200
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/${{ matrix.kind-version }}/kind-$(uname)-amd64
+        chmod +x ./kind
+        sudo mv kind /usr/local/bin
+    - name: Create KinD Cluster
+      working-directory: ./src/github.com/optum/kafka-topic-channel
+      run: |
+        set -x
+        # KinD configuration.
+        cat > kind.yaml <<EOF
+        apiVersion: kind.x-k8s.io/v1alpha4
+        kind: Cluster
+        nodes:
+        - role: control-plane
+          image: kindest/node:${{ matrix.k8s-version }}@${{ matrix.kind-image-sha }}
+        - role: worker
+          image: kindest/node:${{ matrix.k8s-version }}@${{ matrix.kind-image-sha }}
+          extraPortMappings:
+          - containerPort: 31112
+            hostPort: 8080
+          - containerPort: 31113
+            hostPort: 8081
+        # This is needed in order to support projected volumes with service account tokens.
+        # See: https://kubernetes.slack.com/archives/CEKK1KTN2/p1600268272383600
+        kubeadmConfigPatches:
+          - |
+            apiVersion: kubeadm.k8s.io/v1beta2
+            kind: ClusterConfiguration
+            metadata:
+              name: config
+            apiServer:
+              extraArgs:
+                "service-account-issuer": "kubernetes.default.svc"
+                "service-account-signing-key-file": "/etc/kubernetes/pki/sa.key"
+        EOF
+        # Create a cluster!
+        kind create cluster --config kind.yaml
+    - name: Install Knative Eventing Nightly
+      working-directory: ./src/github.com/optum/kafka-topic-channel
+      run: |
+        set -x
+        kubectl apply -f https://${{ matrix.kn-url }}/eventing-crds.yaml
+        kubectl apply -f https://${{ matrix.kn-url }}/eventing-core.yaml
+        kubectl apply -f https://${{ matrix.kn-url }}/mt-channel-broker.yaml
+        ko apply -Rf ./config/channel/
+        # kubectl apply -f ./config/release/release.yaml
+    - name: Install Strimzi
+      run: |
+        strimzi_version=`curl https://github.com/strimzi/strimzi-kafka-operator/releases/latest |  awk -F 'tag/' '{print $2}' | awk -F '"' '{print $1}' 2>/dev/null`
+        kubectl create namespace kafka
+        kubectl -n kafka apply --selector strimzi.io/crd-install=true -f https://github.com/strimzi/strimzi-kafka-operator/releases/download/${strimzi_version}/strimzi-cluster-operator-${strimzi_version}.yaml
+        curl -L "https://github.com/strimzi/strimzi-kafka-operator/releases/download/${strimzi_version}/strimzi-cluster-operator-${strimzi_version}.yaml" \
+         | sed 's/namespace: .*/namespace: kafka/' \
+         | kubectl -n kafka apply -f -
+        kubectl -n kafka apply -f "https://raw.githubusercontent.com/strimzi/strimzi-kafka-operator/${strimzi_version}/examples/kafka/kafka-ephemeral-single.yaml"
+        kubectl wait deployment --all --timeout=-1s --for=condition=Available -n knative-eventing
+        kubectl wait deployment --all --timeout=-1s --for=condition=Available -n kafka
+        kubectl -n kafka apply -f "https://raw.githubusercontent.com/strimzi/strimzi-kafka-operator/${strimzi_version}/examples/topic/kafka-topic.yaml"
+    - name: Run e2e Tests
+      working-directory: ./src/github.com/optum/kafka-topic-channel
+      run: |
+        set -x
+        export GO111MODULE=on
+
+        go test -v -race -count=1 -timeout=15m -tags=e2e ./test/e2e/... -run 'TestChannel.*'

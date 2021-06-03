@@ -1,0 +1,85 @@
+apiVersion: eventing.knative.dev/v1
+kind: Broker
+metadata:
+  name: testbroker
+  namespace: {{ .namespace }}
+  annotations:
+    eventing.knative.dev/broker.class: MTChannelBasedBroker
+spec:
+  config:
+    apiVersion: v1
+    kind: ConfigMap
+    name: ktc-e2e-cm
+
+---
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: triggername
+  namespace: {{ .namespace }}
+spec:
+  broker: testbroker
+  filter:
+    attributes:
+      type: knative.producer.e2etest
+  subscriber:
+    ref:
+      apiVersion: v1
+      kind: Service
+      name: recorder
+---
+apiVersion: v1
+data:
+  channelTemplateSpec: |
+    apiVersion: messaging.optum.dev/v1alpha1
+    kind: KafkaTopicChannel
+    spec:
+      numPartitions: 1
+      bootstrapServers:
+      - my-cluster-kafka-bootstrap.kafka.svc:9092
+      topic: my-topic
+kind: ConfigMap
+metadata:
+  name: ktc-e2e-cm
+  namespace: {{ .namespace }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-logging
+  namespace: {{ .namespace }}
+data:
+  # Common configuration for all Knative codebase
+  zap-logger-config: |
+    {
+      "level": "debug",
+      "development": false,
+      "outputPaths": ["stdout"],
+      "errorOutputPaths": ["stderr"],
+      "encoding": "json",
+      "encoderConfig": {
+        "timeKey": "ts",
+        "levelKey": "level",
+        "nameKey": "logger",
+        "callerKey": "caller",
+        "messageKey": "msg",
+        "stacktraceKey": "stacktrace",
+        "lineEnding": "",
+        "levelEncoder": "",
+        "timeEncoder": "iso8601",
+        "durationEncoder": "",
+        "callerEncoder": ""
+      }
+    }
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-tracing
+  namespace: {{ .namespace }}
+data:
+    backend: "none"
+    zipkin-endpoint: "http://zipkin.istio-system.svc.cluster.local:9411/api/v2/spans"
+    stackdriver-project-id: "my-project"
+    debug: "false"
+    sample-rate: "1.0"
