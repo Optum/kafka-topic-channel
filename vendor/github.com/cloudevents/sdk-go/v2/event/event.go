@@ -1,3 +1,8 @@
+/*
+ Copyright 2021 The CloudEvents Authors
+ SPDX-License-Identifier: Apache-2.0
+*/
+
 package event
 
 import (
@@ -50,13 +55,12 @@ func New(version ...string) Event {
 // Use functions in the types package to convert extension values.
 // For example replace this:
 //
-//     var i int
-//     err := e.ExtensionAs("foo", &i)
+//	var i int
+//	err := e.ExtensionAs("foo", &i)
 //
 // With this:
 //
-//     i, err := types.ToInteger(e.Extensions["foo"])
-//
+//	i, err := types.ToInteger(e.Extensions["foo"])
 func (e Event) ExtensionAs(name string, obj interface{}) error {
 	return e.Context.ExtensionAs(name, obj)
 }

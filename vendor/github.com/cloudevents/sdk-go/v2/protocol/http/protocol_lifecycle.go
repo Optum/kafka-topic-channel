@@ -1,3 +1,8 @@
+/*
+ Copyright 2021 The CloudEvents Authors
+ SPDX-License-Identifier: Apache-2.0
+*/
+
 package http
 
 import (
@@ -33,8 +38,10 @@ func (p *Protocol) OpenInbound(ctx context.Context) error {
 	}
 
 	p.server = &http.Server{
-		Addr:    listener.Addr().String(),
-		Handler: attachMiddleware(p.Handler, p.middleware),
+		Addr:         listener.Addr().String(),
+		Handler:      attachMiddleware(p.Handler, p.middleware),
+		ReadTimeout:  DefaultTimeout,
+		WriteTimeout: DefaultTimeout,
 	}
 
 	// Shutdown

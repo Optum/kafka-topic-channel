@@ -1,3 +1,8 @@
+/*
+ Copyright 2021 The CloudEvents Authors
+ SPDX-License-Identifier: Apache-2.0
+*/
+
 package client
 
 import (
@@ -52,7 +57,6 @@ var (
 // * func(event.Event) (*event.Event, protocol.Result)
 // * func(context.Context, event.Event) *event.Event
 // * func(context.Context, event.Event) (*event.Event, protocol.Result)
-//
 func receiver(fn interface{}) (*receiverFn, error) {
 	fnType := reflect.TypeOf(fn)
 	if fnType.Kind() != reflect.Func {
