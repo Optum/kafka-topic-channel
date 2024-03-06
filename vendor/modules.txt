@@ -83,7 +83,7 @@ github.com/cloudevents/conformance/pkg/http
 # github.com/cloudevents/sdk-go/protocol/kafka_sarama/v2 v2.4.1
 ## explicit
 github.com/cloudevents/sdk-go/protocol/kafka_sarama/v2
-# github.com/cloudevents/sdk-go/v2 v2.4.1
+# github.com/cloudevents/sdk-go/v2 v2.15.2
 ## explicit
 github.com/cloudevents/sdk-go/v2
 github.com/cloudevents/sdk-go/v2/binding
@@ -289,7 +289,7 @@ github.com/robfig/cron/v3
 github.com/sirupsen/logrus
 # github.com/spf13/pflag v1.0.5
 github.com/spf13/pflag
-# github.com/stretchr/testify v1.7.0
+# github.com/stretchr/testify v1.8.0
 ## explicit
 github.com/stretchr/testify/assert
 github.com/stretchr/testify/require
@@ -385,7 +385,7 @@ golang.org/x/text/transform
 golang.org/x/text/unicode/bidi
 golang.org/x/text/unicode/norm
 golang.org/x/text/width
-# golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba
+# golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac
 ## explicit
 golang.org/x/time/rate
 # golang.org/x/tools v0.1.0
@@ -543,7 +543,7 @@ gopkg.in/evanphx/json-patch.v4
 gopkg.in/inf.v0
 # gopkg.in/yaml.v2 v2.4.0
 gopkg.in/yaml.v2
-# gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+# gopkg.in/yaml.v3 v3.0.1
 gopkg.in/yaml.v3
 # k8s.io/api v0.19.7
 ## explicit

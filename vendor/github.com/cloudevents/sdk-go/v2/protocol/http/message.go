@@ -1,3 +1,8 @@
+/*
+ Copyright 2021 The CloudEvents Authors
+ SPDX-License-Identifier: Apache-2.0
+*/
+
 package http
 
 import (
@@ -87,6 +92,9 @@ func (m *Message) ReadEncoding() binding.Encoding {
 		return binding.EncodingBinary
 	}
 	if m.format != nil {
+		if m.format == format.JSONBatch {
+			return binding.EncodingBatch
+		}
 		return binding.EncodingStructured
 	}
 	return binding.EncodingUnknown
